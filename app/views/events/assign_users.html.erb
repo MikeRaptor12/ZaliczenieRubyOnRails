@@ -1,0 +1,18 @@
+<h1>Przypisz użytkowników do wydarzenia: <%= @event.name %></h1>
+
+<%= form_with model: @event, url: assign_users_event_path(@event), method: :patch, local: true do |form| %>
+  <div class="field">
+    <%= form.label :user_ids, "Wybierz użytkowników:" %><br>
+    <%= form.collection_check_boxes :user_ids, @users, :id, :name do |b| %>
+      <div class="checkbox">
+        <label>
+          <%= b.check_box %> <%= b.text %>
+        </label>
+      </div>
+    <% end %>
+  </div>
+
+  <%= form.submit "Zapisz przypisania", class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to 'Powrót do wydarzeń', events_path, class: 'btn btn-secondary' %>

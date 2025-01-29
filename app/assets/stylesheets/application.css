@@ -1,0 +1,210 @@
+/* Ogólne ustawienia */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2f3c4f, #1e252f); /* Ciemny gradient */
+    color: #e4e4e4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #e4e4e4;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; /* Kolor linków */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f39c12; /* Zmiana koloru na hover */
+}
+
+/* Przycisk */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.btn-info {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #16a085;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Stylizacja nagłówków */
+h1, h2 {
+    font-size: 2em;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(38, 47, 64, 1), rgba(45, 61, 81, 1)); /* Ciemny gradient */
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0;
+}
+
+/* Lista wydarzeń */
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-item {
+    background: rgba(38, 47, 64, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.event-item:hover {
+    transform: scale(1.05);
+}
+
+.event-item h4 {
+    color: #f39c12;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.event-item p {
+    margin: 5px 0;
+}
+
+/* Akcje (linki) */
+.event-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.event-actions .btn {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.event-actions .btn-info {
+    background-color: #3498db;
+}
+
+.event-actions .btn-info:hover {
+    background-color: #2980b9;
+}
+
+.event-actions .btn-primary {
+    background-color: #2980b9;
+}
+
+.event-actions .btn-primary:hover {
+    background-color: #3498db;
+}
+
+.event-actions .btn-danger {
+    background-color: #e74c3c;
+}
+
+.event-actions .btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Stylizacja formularzy */
+form {
+    background: rgba(38, 47, 64, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #34495e;
+    color: white;
+}
+
+form input:focus, form select:focus, form button:focus {
+    outline: none;
+    border: 2px solid #f39c12;
+    background-color: #2c3e50;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, rgba(38, 47, 64, 1), rgba(45, 61, 81, 1));
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar-link {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-link:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+    color: #1e252f;
+}

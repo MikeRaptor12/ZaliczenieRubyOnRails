@@ -1,0 +1,29 @@
+/* app/assets/stylesheets/_tables.css */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #34495e;
+}
+
+th {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+td {
+    background-color: #2c3e50;
+}
+
+tr:nth-child(even) td {
+    background-color: #34495e;
+}
+
+tr:hover td {
+    background-color: #1abc9c;
+}

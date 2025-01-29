@@ -1,0 +1,17 @@
+<h1>Dodaj nowego wykonawcę</h1>
+
+<%= form_with model: @performer, local: true do |form| %>
+  <div>
+    <%= form.label :name, 'Imię wykonawcy' %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :bio, 'Biografia' %>
+    <%= form.text_area :bio %>
+  </div>
+
+  <div>
+    <%= form.submit 'Dodaj wykonawcę' %>
+  </div>
+<% end %>

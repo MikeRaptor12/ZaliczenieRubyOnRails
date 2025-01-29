@@ -1,0 +1,53 @@
+<h1>Dodaj nowe wydarzenie</h1>
+
+<%= form_with model: @event, local: true do |form| %>
+  <div>
+    <%= form.label :name, 'Nazwa wydarzenia' %>
+    <%= form.text_field :name, required: true, class: 'form-input' %>
+  </div>
+
+  <div>
+    <%= form.label :date, 'Data wydarzenia' %>
+    <%= form.datetime_select :date, required: true, class: 'form-input' %>
+  </div>
+
+  <div>
+    <%= form.label :event_type, 'Typ wydarzenia' %>
+    <%= form.select :event_type, ['Film', 'Koncert'], {}, { class: 'form-input', id: 'event_type_select' } %>
+  </div>
+
+  <!-- Sekcja dla filmu -->
+  <div id="film_fields" style="display: none;">
+    <%= form.label :movie_id, 'Film' %>
+    <%= form.collection_select :movie_id, Movie.all, :id, :title, { prompt: 'Wybierz film' }, class: 'form-input' %>
+  </div>
+
+  <!-- Sekcja dla koncertu -->
+  <div id="concert_fields" style="display: none;">
+    <%= form.label :performer_ids, 'Wykonawcy' %>
+    <%= form.collection_check_boxes :performer_ids, Performer.all, :id, :name, { multiple: true }, { class: 'form-input' } %>
+  </div>
+
+  <div>
+    <%= form.submit 'Dodaj wydarzenie', class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const eventTypeSelect = document.getElementById("event_type_select");
+        const filmFields = document.getElementById("film_fields");
+        const concertFields = document.getElementById("concert_fields");
+
+        // Funkcja obsługująca zmianę typu wydarzenia
+        eventTypeSelect.addEventListener("change", function() {
+            if (eventTypeSelect.value === "Film") {
+                filmFields.style.display = "block";  // Pokaż pole filmu
+                concertFields.style.display = "none";  // Ukryj pole wykonawców
+            } else if (eventTypeSelect.value === "Koncert") {
+                filmFields.style.display = "none";  // Ukryj pole filmu
+                concertFields.style.display = "block";  // Pokaż pole wykonawców
+            }
+        });
+    });
+</script>

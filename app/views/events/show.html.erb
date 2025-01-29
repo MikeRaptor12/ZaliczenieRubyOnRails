@@ -1,0 +1,20 @@
+<h1><%= @event.name %></h1>
+
+<p>Data wydarzenia: <%= @event.date %></p>
+<p>Typ wydarzenia: <%= @event.event_type %></p>
+
+<% if @event.event_type == 'Film' %>
+  <p>Film: <%= @event.movie.title %></p>
+<% elsif @event.event_type == 'Koncert' %>
+  <p>Wykonawcy: <%= @event.performers.map(&:name).join(', ') %></p>
+<% end %>
+
+<h3>Uczestnicy:</h3>
+<ul>
+  <% @event.users.each do |user| %>
+    <li><%= user.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edytuj wydarzenie', edit_event_path(@event) %> |
+<%= link_to 'Powrót', events_path %>

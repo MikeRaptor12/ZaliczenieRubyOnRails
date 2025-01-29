@@ -1,0 +1,31 @@
+/* app/assets/stylesheets/_buttons.css */
+.btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.btn-success {
+    background-color: var(--primary-color);
+}
+
+.btn-info {
+    background-color: var(--secondary-color);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+}
+
+.btn-sm {
+    font-size: 0.9em;
+    padding: 6px 12px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,36 @@
+/* app/assets/stylesheets/_forms.css */
+form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #ecf0f1;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    background: #34495e;
+    border: 1px solid #1abc9c;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EventBooking</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <head>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload", type: "module" %>
+  </head>
+
+  <%= stylesheet_link_tag "application", "data-turbolinks-track": "reload" %>
+</head>
+<body>
+<!-- Navbar -->
+<nav style="background-color: #282c34; padding: 10px; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000;">
+  <ul style="list-style-type: none; padding: 0; display: flex; gap: 20px; font-size: 18px;">
+    <li><%= link_to 'Uczestnicy', users_path, class: 'navbar-link' %></li>
+    <li><%= link_to 'Wydarzenia', events_path, class: 'navbar-link' %></li>
+    <li><%= link_to 'Wykonawcy', performers_path, class: 'navbar-link' %></li>
+    <li><%= link_to 'Filmy', movies_path, class: 'navbar-link' %></li>
+  </ul>
+</nav>
+
+<div style="margin-top: 60px;"> <!-- To daje przestrzeń na navbar -->
+  <%= yield %>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* app/assets/stylesheets/_colors.css */
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #3498db;
+    --danger-color: #e74c3c;
+    --dark-background: #2c3e50;
+    --light-background: #ecf0f1;
+    --button-hover-color: #1abc9c;
+
+    /* Gradienty */
+    --gradient-dark: linear-gradient(135deg, #2c3e50, #34495e);
+    --gradient-light: linear-gradient(135deg, #1abc9c, #16a085);
+}

@@ -1,0 +1,39 @@
+/* app/assets/stylesheets/_base.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--gradient-dark);
+    color: #ecf0f1;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+nav {
+    background: var(--gradient-light);
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #16a085;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}

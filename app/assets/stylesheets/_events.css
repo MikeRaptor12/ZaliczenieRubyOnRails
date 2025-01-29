@@ -1,0 +1,247 @@
+/* events.css */
+
+/* Podstawowe ustawienia dla tła i layoutu */
+body {
+    background: linear-gradient(135deg, #282c34, #3a3f47);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nagłówki i tytuły */
+h1, h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* events.css */
+
+/* events.css */
+
+/* events.css */
+
+/* Przyciski */
+.btn {
+    padding: 6px 12px;  /* Mniejsze wymiary przycisków */
+    font-size: 14px;    /* Zmniejszona czcionka */
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    display: block; /* Zmienia przyciski na block, aby były jeden pod drugim */
+    width: 100%;    /* Przyciski zajmują całą szerokość */
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border: none;
+    margin-bottom: 8px;  /* Odstęp między przyciskami */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Kolory dla poszczególnych przycisków */
+.btn-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-info {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #F44336;
+    color: white;
+}
+
+/* Układ przycisków w tabeli */
+td {
+    display: block;  /* Przekształcenie td na block, aby zawartość była pod sobą */
+    width: 100%; /* Zajmuje całą szerokość komórki */
+}
+
+td a, td button {
+    margin: 0;
+    padding: 6px 12px;
+    font-size: 14px;    /* Zmniejszona czcionka przycisków w tabeli */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;  /* Przyciski będą teraz zajmować pełną szerokość */
+}
+
+/* Dodatkowa stylizacja dla tabeli w sekcji filmów i koncertów */
+table td a {
+    background-color: #007BFF;
+    color: white;
+}
+
+table td button {
+    background-color: #F44336;
+    color: white;
+}
+
+/* Stylizacja formularzy */
+.form-submit {
+    padding: 8px 20px;  /* Zmniejszona wysokość przycisku formularza */
+    font-size: 16px;    /* Zmniejszona czcionka przycisku formularza */
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;  /* Przyciski formularza zajmują całą szerokość */
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+
+/* Tabele */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #555;
+}
+
+table th {
+    background-color: #333;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #444;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #555;
+}
+
+table tbody tr:hover {
+    background-color: #666;
+}
+
+/* Układ przycisków w tabeli */
+td {
+    display: flex;
+    gap: 10px;
+}
+
+td a, td button {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Formularz */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+}
+
+.form-submit {
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Sekcja z wydarzeniami */
+.table-responsive {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Sekcja z formularzami */
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+}
+
+.form-input, .form-submit {
+    width: 100%;
+}
+
+/* Stylizacja tabeli z filmami i koncertami */
+.table-responsive {
+    display: block;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+/* Stylizacja dla linków do edycji i usuwania */
+.table td a, .table td button {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 6px 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table td a:hover, .table td button:hover {
+    opacity: 0.8;
+}
+
+/* Dodatkowe style dla tabeli w sekcji filmów i koncertów */
+table td a {
+    background-color: #007BFF;
+    color: white;
+}
+
+table td button {
+    background-color: #F44336;
+    color: white;
+}
+
+/* Wyrównanie przycisków w formularzu */
+button.form-submit {
+    text-align: center;
+}
